@@ -1,4 +1,4 @@
-const {StyleSheet} = require('react-native');
+const {StyleSheet, Dimensions} = require('react-native');
 
 const styles = StyleSheet.create({
   image: {
@@ -26,6 +26,25 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'black',
+  },
+  searchButton: {
+    backgroundColor: 'white',
+    width: (Dimensions.get('screen').width = 350),
+    marginHorizontal: 20,
+    height: 50,
+    borderRadius: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: 30,
+    zIndex: 100,
+  },
+
+  searchButtonText: {
     fontSize: 16,
     fontWeight: 'bold',
     color: 'black',

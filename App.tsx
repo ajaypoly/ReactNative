@@ -1,29 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import { SafeAreaView, ScrollView } from 'react-native';
 import HomeScreen from './src/views/home';
+import Post from './src/components/Post';
+import feed from './assets/data/feed';
+import DestinationSearch from './src/views/Destination';
 
 function App(): JSX.Element {
-  return <>
-  
-  <SafeAreaView>
-    <HomeScreen/>
-  </SafeAreaView>
-  </>;
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      {/* <ScrollView>
+        {feed.map((post) => (
+          <Post key={post.id} post={post} />
+        ))}
+      </ScrollView> */}
+      <DestinationSearch/>
+    </SafeAreaView>
+  );
 }
 
 export default App;
