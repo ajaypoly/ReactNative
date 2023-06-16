@@ -3,6 +3,7 @@ import React from 'react';
 import HomeScreen from '../views/home';
 import Post from '../components/Post';
 import SearchResultsScreen from '../views/SearchResults';
+import SearchResultsTabNavigator from './SearchResultsTabNavigator';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +18,7 @@ const ExploreNavigator = () => {
         }}></Stack.Screen>
       <Stack.Screen
         name={'SearchResults'}
-        component={SearchResultsScreen}
+        component={SearchResultsTabNavigator}
         options={{
           headerShown: false,
         }}></Stack.Screen>
