@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   textInput: {
     fontSize: 18,
     marginBottom: 20,
+    color: 'black',
   },
   row: {
     flexDirection: 'row',
@@ -21,7 +22,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginRight: 15,
   },
-  locationText: {},
+  locationText: {
+    color: 'black',
+  },
 });
 
 export default styles;

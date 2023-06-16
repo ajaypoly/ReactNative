@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './style';
 
 const Post = ({post}) => {
-  console.log(post, 'hiiii');
   return (
     <View style={styles.container}>
       <Image
