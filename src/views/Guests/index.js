@@ -92,7 +92,12 @@ const GuestScreen = () => {
         <Pressable
           style={styles.submitButton}
           onPress={() => {
-            navigation.navigate('');
+            navigation.navigate('Home', {
+              screen: 'Explore',
+              params: {
+                screen: 'SearchResults',
+              },
+            });
           }}>
           <Text style={{fontSize: 20, fontWeight: 'bold'}}> Search</Text>
         </Pressable>

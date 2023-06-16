@@ -6,6 +6,7 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import ExploreNavigator from './ExploreNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +18,9 @@ const HomeTabNavigator = () => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        component={HomeScreen}
+        component={ExploreNavigator}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
           ),
@@ -28,6 +30,7 @@ const HomeTabNavigator = () => {
         name={'Airbnb'}
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <FontAwesome5 name="airbnb" size={25} color={color} />
           ),
@@ -37,6 +40,7 @@ const HomeTabNavigator = () => {
         name={'Messages'}
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Feather name="message-square" size={25} color={color} />
           ),
@@ -46,6 +50,7 @@ const HomeTabNavigator = () => {
         name={'Profile'}
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <EvilIcons name="user" size={25} color={color} />
           ),

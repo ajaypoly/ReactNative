@@ -11,13 +11,7 @@ import Router from './src/navigation/Router';
 function App(): JSX.Element {
   return (
     < >
-      {/* <ScrollView>
-        {feed.map((post) => (
-          <Post key={post.id} post={post} />
-        ))}
-      </ScrollView> */}
-      {/* <DestinationSearch/> */}
-      {/* <GuestScreen/> */}
+   
       <Router/>
     </>
   );

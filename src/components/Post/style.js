@@ -17,18 +17,20 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 18,
     lineHeight: 26,
+    color: 'black',
   },
   prices: {
     fontSize: 18,
     marginVertical: 10,
+    color: 'black',
   },
   oldPrice: {
-    color: '#5b5b5b',
     color: '#5b5b5b',
     textDecorationLine: 'line-through',
   },
   price: {
     fontWeight: 'bold',
+    color: 'black',
   },
   totalPrice: {
     color: '#5b5b5b',
